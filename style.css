@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#7992C6;
+    height:100vh;
+}
+
+h1 {
+    color: rgb(33, 1, 113);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem 0 3rem 0;
+
+}
+
+
+.container{
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns:  1fr;
+    justify-items: center;
+
+}
+
+.imageGallery {
+    display: flex;
+    justify-content: center;
+} 
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.preview {
+    width: 6rem;
+    height: 7rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.outputBox a img{
+    width: 16rem;
+    height: 22rem;
+    background-color: #456dc4;
+}
+
+p  {
+    width: 16rem;
+    height: auto;
+    font-weight: bold;
+    font-size: 1rem; 
+    text-align: center;
+    align-content: center;
+    color: rgb(253, 2, 73);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (min-width: 600px) {
+
+    .container{
+        margin-top: 1rem;
+        grid-template-columns:  1fr 1fr;
+        justify-items:baseline;
+    }
+
+    .images {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .preview {
+        padding-top:0;
+    }
+
+    .outputBox a img{
+        width: 16rem;
+        height: 20rem;
+        background-color: #456dc4;
+    }
+  }
+  
+
+  @media (min-width: 770px) {
+
+    .container{
+        grid-template-columns:  1fr 1fr;
+
+    }
+
+    .preview {
+        padding-top:0;
+    }
+    
+
+    .images {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .outputBox a img{
+        margin-left: 2rem;
+        width: 22rem;
+        height: 28rem;
+        background-color: #456dc4;
+    }
+
+    
+    p  {
+        width: 25rem;
+    }
+    
+  }
+  
+
+
+
+@media (min-width: 990px) {
+
+    .container{
+        grid-template-columns:  1fr 1fr;
+    }
+
+    .preview {
+        padding-top:0;
+    }
+
+    .images {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .outputBox a img{
+        margin-left: 2rem;
+        width: 26rem;
+        height: 34rem;
+        background-color: #456dc4;
+    }
+
+    p  {
+        width: 30rem;
+   
+    }
+    
+  }
+  
+  
